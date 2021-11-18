@@ -5,10 +5,9 @@
       <section id="mainCont">
         <h2 className="sr-only">메인 컨텐츠 영역입니다.</h2>
         <div className="main__cont">
-          <div>we provide</div>
-          <div>visual coding</div>
-          <div>solution</div>
-          <div>for you webs</div>
+          <div v-for="title in titles" v-bind:key="title.text">
+            {{ title.text }}
+          </div>
         </div>
       </section>
     </main>
@@ -24,6 +23,17 @@ export default {
   components: {
     Header,
     Footer,
+  },
+
+  data: function () {
+    return {
+      titles: [
+        { text: 'we provide' },
+        { text: 'visual coding' },
+        { text: 'solution' },
+        { text: 'FOR YOU WEBS' },
+      ],
+    };
   },
 };
 </script>
