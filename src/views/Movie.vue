@@ -28,84 +28,7 @@
       <swiper-slide>Slide 2</swiper-slide>
       <swiper-slide>Slide 3</swiper-slide>
     </swiper>
-    <section id="popular">
-      <div class="swiper-container2 scontainer">
-        <div class="s1sliderWrap swiper-wrapper">
-          <div class="swiper-slide s1sliderInner">
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-            <div class="s1slider">
-              <div class="s1sliderImg"></div>
-              <div class="s1sliderDesc">
-                <div class="s1sliderTitle">영화 제목</div>
-                <div class="s1sliderDay">상영일자</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="popular"></section>
     <section id="youtubeCont">
       <div className="container">
         <div className="youtube__cont">
@@ -137,12 +60,7 @@
 </template>
 <script>
 import { ref } from 'vue';
-import { Swiper, SwiperSlide } from 'swiper/vue';
 export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
   setup() {
     const movieAPI = process.env.VUE_APP_MOVIE_KEY;
     const search = ref('');
@@ -177,9 +95,6 @@ export default {
 };
 </script>
 <style lang="scss">
-* {
-  font-family: 'GmarketSans';
-}
 .container {
   max-width: 1280px;
   margin: 0 auto;
